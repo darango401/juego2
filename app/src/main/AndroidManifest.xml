@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sudoku_App">
-        <activity android:name=".MenuPopup" android:theme="@style/AppTheme.PopMe">
-        </activity>
+        <activity android:name=".Nivel3Activity"></activity>
+        <activity android:name=".Nivel2Activity" />
+        <activity android:name=".Nivel1Activity" />
         <activity
-            android:name=".NivelActivity"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+            android:name=".MenuPopup"
+            android:theme="@style/AppTheme.PopMe" />
         <activity
             android:name=".MenuActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
