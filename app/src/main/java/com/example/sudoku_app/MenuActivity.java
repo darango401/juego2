@@ -10,12 +10,20 @@ import android.widget.Button;
 import android.widget.PopupMenu;
 
 public class MenuActivity extends Activity {
-    Button buttonJugar;
+    Button buttonJugar, buttonSalir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
         buttonJugar = (Button)findViewById(R.id.buttonJugar);
+        buttonSalir = (Button)findViewById(R.id.buttonSalir);
+        buttonSalir.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                finish();
+            }
+        });
         buttonJugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
