@@ -111,15 +111,15 @@ public class Nivel2Activity extends Activity {
         int width = 500;
         int height = 500;
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width,height);
-        input="8 7 6 1 9 2 4 3 5 " +
-                "4 2 ? ? ? ? 8 1 ? " +
-                "5 1 3 6 4 ? 9 7 2 " +
-                "? ? ? ? 3 5 ? 6 1 " +
-                "? 5 7 9 ? ? ? 4 8 " +
-                "6 3 ? ? ? ? ? 2 9 " +
-                "2 9 ? ? 7 ? ? 8 3 " +
-                "? ? ? ? 6 ? 1 5 7 " +
-                "7 6 1 5 ? ? 2 9 4 ";
+        input=  "2 ? 3 ? 9 ? 8 4 ? " +
+                "? ? ? 3 2 ? ? ? ? " +
+                "? 7 8 4 6 5 ? 3 ? " +
+                "? 5 ? ? 1 ? 7 2 ? " +
+                "4 8 ? ? ? ? ? 1 9 " +
+                "? 3 2 ? 5 ? ? 8 ? " +
+                "? 9 ? 1 4 2 3 5 ? " +
+                "? ? ? ? 8 9 ? ? ? " +
+                "? 1 4 ? 7 ? 9 ? 2 ";
         String[] split = input.split(" ");
         table = new Cell[9][9];
         tl = new TableLayout(this);
