@@ -131,6 +131,7 @@ public class Nivel1Activity extends Activity {
         linearLayout.addView(tl);
         linearLayout.addView(tv);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
+        linearLayout.setBackgroundResource(R.drawable.background);
         setContentView(linearLayout);
 
     }
