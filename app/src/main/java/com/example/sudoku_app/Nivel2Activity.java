@@ -2,9 +2,10 @@ package com.example.sudoku_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 
-public class Nivel2Activity extends AppCompatActivity {
+public class Nivel2Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,9 +3,11 @@ package com.example.sudoku_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
+import android.view.View;
 import android.view.WindowManager;
 
 public class MenuPopup extends Activity {
@@ -20,7 +22,7 @@ public class MenuPopup extends Activity {
 
         int width = dm.widthPixels;
         int height = dm.heightPixels;
-        getWindow().setLayout((int)(width *.8), (int)(height*.5));
+        getWindow().setLayout((int)(width), (int)(height));
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;
@@ -28,5 +30,24 @@ public class MenuPopup extends Activity {
         params.y = -20;
 
         getWindow().setAttributes(params);
+    }
+
+    public void Nivel1(View v){
+        Intent intent = new Intent(this,Nivel1Activity.class);
+        startActivity(intent);
+    }
+
+    public void Nivel2(View v){
+        Intent intent = new Intent(this,Nivel2Activity.class);
+        startActivity(intent);
+    }
+
+    public void Nivel3(View v){
+        Intent intent = new Intent(this,Nivel3Activity.class);
+        startActivity(intent);
+    }
+
+    public void Salir(View v){
+        finish();
     }
 }

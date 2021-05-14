@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sudoku_App">
-        <activity android:name=".Nivel3Activity"></activity>
-        <activity android:name=".Nivel2Activity" />
-        <activity android:name=".Nivel1Activity" />
+        <activity android:name=".Nivel3Activity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"></activity>
+        <activity android:name=".Nivel2Activity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"/>
+        <activity android:name=".Nivel1Activity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"/>
         <activity
             android:name=".MenuPopup"
             android:theme="@style/AppTheme.PopMe" />
