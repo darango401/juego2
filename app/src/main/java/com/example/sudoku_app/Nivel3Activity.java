@@ -111,15 +111,15 @@ public class Nivel3Activity extends Activity {
         int width = 500;
         int height = 500;
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width,height);
-        input="8 7 6 1 9 2 4 3 5 " +
-                "4 2 ? ? ? ? 8 1 ? " +
-                "5 1 3 6 4 ? 9 7 2 " +
-                "? ? ? ? 3 5 ? 6 1 " +
-                "? 5 7 9 ? ? ? 4 8 " +
-                "6 3 ? ? ? ? ? 2 9 " +
-                "2 9 ? ? 7 ? ? 8 3 " +
-                "? ? ? ? 6 ? 1 5 7 " +
-                "7 6 1 5 ? ? 2 9 4 ";
+        input = "1 5 2 9 ? ? ? ? ? " +
+                "? ? 4 ? ? ? ? 9 ? " +
+                "? 7 ? 4 ? 5 ? 6 ? " +
+                "? 5 ? ? 2 1 4 ? 9 " +
+                "? 9 1 ? ? 8 6 2 7 " +
+                "3 ? ? 6 ? 4 8 ? ? " +
+                "? ? 9 ? ? 7 3 1 5 " +
+                "? ? 5 8 ? ? ? ? ? " +
+                "? ? ? 5 4 9 2 8 6 ";
         String[] split = input.split(" ");
         table = new Cell[9][9];
         tl = new TableLayout(this);
