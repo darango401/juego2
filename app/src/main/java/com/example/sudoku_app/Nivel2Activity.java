@@ -29,7 +29,7 @@ public class Nivel2Activity extends Activity {
             if (value!=0) fixed=true;
             else fixed=false;
             bt=new Button(THIS);
-            bt.setBackgroundResource(R.drawable.casilla);
+            bt.setBackgroundResource(R.drawable.casilla1);
             bt.setTextColor(Color.WHITE);
             if (fixed) bt.setText(String.valueOf(value));
             else bt.setTextColor(Color.BLUE);

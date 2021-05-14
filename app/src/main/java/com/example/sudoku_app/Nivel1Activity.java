@@ -34,9 +34,9 @@ public class Nivel1Activity extends Activity {
             else fixed=false;
             bt=new Button(THIS);
             bt.setBackgroundResource(R.drawable.casilla);
-            bt.setTextColor(Color.WHITE);
+            bt.setTextColor(Color.BLACK);
             if (fixed) bt.setText(String.valueOf(value));
-            else bt.setTextColor(Color.BLUE);
+            else bt.setTextColor(Color.GREEN);
             bt.setOnClickListener(new View.OnClickListener(){
 
                 @Override
@@ -112,8 +112,8 @@ public class Nivel1Activity extends Activity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_nivel1);
         Bitmap bmp;
-        int width = 500;
-        int height = 500;
+        int width = 400;
+        int height = 400;
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width,height);
         input="8 7 6 1 9 2 4 3 5 " +
               "4 2 ? ? ? ? 8 1 ? " +
@@ -146,8 +146,8 @@ public class Nivel1Activity extends Activity {
         bmp = Bitmap.createScaledBitmap(bmp,width,height,true);
         imageView.setImageBitmap(bmp);
         layoutParams.gravity=Gravity.CENTER_HORIZONTAL;
-        layoutParams.bottomMargin=20;
-        layoutParams.topMargin=20;
+        layoutParams.bottomMargin=80;
+        layoutParams.topMargin=80;
         imageView.setLayoutParams(layoutParams);
         tv.setLayoutParams(layoutParams);
         tv.setTextSize(20);

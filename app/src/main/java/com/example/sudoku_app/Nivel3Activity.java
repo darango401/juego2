@@ -29,10 +29,10 @@ public class Nivel3Activity extends Activity {
             if (value!=0) fixed=true;
             else fixed=false;
             bt=new Button(THIS);
-            bt.setBackgroundResource(R.drawable.casilla);
+            bt.setBackgroundResource(R.drawable.casilla2);
             bt.setTextColor(Color.WHITE);
             if (fixed) bt.setText(String.valueOf(value));
-            else bt.setTextColor(Color.BLUE);
+            else bt.setTextColor(Color.RED);
             bt.setOnClickListener(new View.OnClickListener(){
 
                 @Override
