@@ -1,14 +1,19 @@
 package com.example.sudoku_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -28,8 +33,10 @@ public class Nivel1Activity extends Activity {
             if (value!=0) fixed=true;
             else fixed=false;
             bt=new Button(THIS);
+            bt.setBackgroundResource(R.drawable.casilla);
+            bt.setTextColor(Color.WHITE);
             if (fixed) bt.setText(String.valueOf(value));
-            else bt.setTextColor(Color.CYAN);
+            else bt.setTextColor(Color.BLUE);
             bt.setOnClickListener(new View.OnClickListener(){
 
                 @Override
@@ -40,9 +47,11 @@ public class Nivel1Activity extends Activity {
                     bt.setText(String.valueOf(value));
                     if (completted()){
                         if (correct()){
-                            tv.setText("Has Ganado!!");
+                            tv.setTextColor(Color.GREEN);
+                            tv.setText("    Has Ganado!!");
                         }else{
-                            tv.setText("Hay algun digito repetido!!!");
+                            tv.setTextColor(Color.RED);
+                            tv.setText("    Has Perdido!!");
                         }
                     }
                 }
@@ -96,11 +105,16 @@ public class Nivel1Activity extends Activity {
     TableLayout tl;
     TextView tv;
     LinearLayout linearLayout;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nivel1);
+        //setContentView(R.layout.activity_nivel1);
+        Bitmap bmp;
+        int width = 500;
+        int height = 500;
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width,height);
         input="8 7 6 1 9 2 4 3 5 " +
               "4 2 ? ? ? ? 8 1 ? " +
               "5 1 3 6 4 ? 9 7 2 " +
@@ -127,7 +141,18 @@ public class Nivel1Activity extends Activity {
         tl.setShrinkAllColumns(true);
         tl.setStretchAllColumns(true);
         tv = new TextView(this);
+        imageView = new ImageView(this);
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.logo);
+        bmp = Bitmap.createScaledBitmap(bmp,width,height,true);
+        imageView.setImageBitmap(bmp);
+        layoutParams.gravity=Gravity.CENTER_HORIZONTAL;
+        layoutParams.bottomMargin=20;
+        layoutParams.topMargin=20;
+        imageView.setLayoutParams(layoutParams);
+        tv.setLayoutParams(layoutParams);
+        tv.setTextSize(20);
         linearLayout = new LinearLayout(this);
+        linearLayout.addView(imageView);
         linearLayout.addView(tl);
         linearLayout.addView(tv);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
