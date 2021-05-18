@@ -1,7 +1,7 @@
 # Sudoku
 Sudoku es una app popular usada por las personas para entrenar la mente.
 
-## Tecnologias usadas
+## Tecnologías usadas
 
 ![](https://img.shields.io/badge/Code-Java-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) ![](https://img.shields.io/badge/IDE-AndroidStudio-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 
@@ -10,7 +10,7 @@ Sudoku es una app popular usada por las personas para entrenar la mente.
 
 ## Developers
 
-Somos 3 estudiantes de la universidad Pontificia Bolivariana
+Somos 3 estudiantes de la Universidad Pontificia Bolivariana
 
 <!-- Actual text -->
 
