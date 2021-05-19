@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="233dp"
-            android:layout_height="42dp"
+            android:layout_height="64dp"
             android:layout_weight="1"
             android:background="#808080"
             android:fontFamily="@font/galindo"
@@ -27,7 +27,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="5dp"
-            android:layout_height="42dp"
+            android:layout_height="64dp"
             android:layout_weight="1"
             android:background="#808080"
             android:src="@drawable/logo" />
