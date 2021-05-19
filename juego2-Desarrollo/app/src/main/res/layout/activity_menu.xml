@@ -19,6 +19,7 @@
             android:layout_weight="1"
             android:background="#808080"
             android:fontFamily="@font/galindo"
+            android:gravity="center_vertical"
             android:text="   SUDOKU"
             android:textColor="#fdd601"
             android:textSize="20dp" />
