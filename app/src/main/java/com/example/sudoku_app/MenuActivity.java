@@ -34,5 +34,11 @@ public class MenuActivity extends Activity {
                 startActivity(i);
             }
         });
+
+
+    }
+    public void creditos(View view){
+        Intent i = new Intent(getApplicationContext(), creditosActivity.class);
+        startActivity(i);
     }
 }
