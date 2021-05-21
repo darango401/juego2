@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.sudoku_app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:5:5-37:19
+12        android:allowBackup="true"
+12-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.3.1] C:\Users\daran\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:10:9-35
+19        android:theme="@style/Theme.Sudoku_App" >
+19-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:11:9-48
+20        <activity
+20-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:12:9-13:98
+21            android:name="com.example.sudoku_app.Nivel3Activity"
+21-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:12:19-49
+22            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+22-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:13:13-86
+23        <activity
+23-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:14:9-15:88
+24            android:name="com.example.sudoku_app.Nivel2Activity"
+24-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:14:19-49
+25            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+25-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:15:13-86
+26        <activity
+26-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:16:9-17:88
+27            android:name="com.example.sudoku_app.Nivel1Activity"
+27-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:16:19-49
+28            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+28-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:17:13-86
+29        <activity
+29-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:18:9-20:53
+30            android:name="com.example.sudoku_app.MenuPopup"
+30-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:19:13-38
+31            android:theme="@style/AppTheme.PopMe" />
+31-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:20:13-50
+32        <activity
+32-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:21:9-23:89
+33            android:name="com.example.sudoku_app.MenuActivity"
+33-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:22:13-41
+34            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+34-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:23:13-86
+35        <activity
+35-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:24:9-32:20
+36            android:name="com.example.sudoku_app.MainActivity"
+36-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:25:13-41
+37            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+37-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:26:13-86
+38            <intent-filter>
+38-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:27:13-31:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:28:17-69
+39-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:28:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:30:17-77
+41-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:30:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <meta-data
+45-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:34:9-36:57
+46            android:name="preloaded_fonts"
+46-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:35:13-43
+47            android:resource="@array/preloaded_fonts" />
+47-->D:\Daniel\Sudoku\Sudoku_App\app\src\main\AndroidManifest.xml:36:13-54
+48    </application>
+49
+50</manifest>

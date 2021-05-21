@@ -1,0 +1,23 @@
+com/example/sudoku_app/MainActivity.java
+ com.example.sudoku_app.MainActivity
+ com.example.sudoku_app.MainActivity$1
+com/example/sudoku_app/MenuPopup.java
+ com.example.sudoku_app.MenuPopup
+com/example/sudoku_app/Nivel3Activity.java
+ com.example.sudoku_app.Nivel3Activity
+ com.example.sudoku_app.Nivel3Activity$Cell
+ com.example.sudoku_app.Nivel3Activity$Cell$1
+com/example/sudoku_app/BuildConfig.java
+ com.example.sudoku_app.BuildConfig
+com/example/sudoku_app/MenuActivity.java
+ com.example.sudoku_app.MenuActivity
+ com.example.sudoku_app.MenuActivity$1
+ com.example.sudoku_app.MenuActivity$2
+com/example/sudoku_app/Nivel1Activity.java
+ com.example.sudoku_app.Nivel1Activity
+ com.example.sudoku_app.Nivel1Activity$Cell
+ com.example.sudoku_app.Nivel1Activity$Cell$1
+com/example/sudoku_app/Nivel2Activity.java
+ com.example.sudoku_app.Nivel2Activity
+ com.example.sudoku_app.Nivel2Activity$Cell
+ com.example.sudoku_app.Nivel2Activity$Cell$1
