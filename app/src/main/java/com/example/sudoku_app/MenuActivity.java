@@ -21,7 +21,10 @@ public class MenuActivity extends Activity {
         buttonSalir.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                finish();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
         buttonJugar.setOnClickListener(new View.OnClickListener() {
