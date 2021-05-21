@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -102,6 +103,7 @@ public class Nivel3Activity extends Activity {
     TextView tv;
     LinearLayout linearLayout;
     ImageView imageView;
+    Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +140,7 @@ public class Nivel3Activity extends Activity {
         tl.setBackgroundResource(R.drawable.gridbackground);
         tv = new TextView(this);
         imageView = new ImageView(this);
+        home = new Button(this);
         bmp = BitmapFactory.decodeResource(getResources(),R.drawable.barra);
         bmp = Bitmap.createScaledBitmap(bmp,width,height,true);
         imageView.setImageBitmap(bmp);
@@ -146,10 +149,21 @@ public class Nivel3Activity extends Activity {
         imageView.setLayoutParams(layoutParams);
         tv.setLayoutParams(layoutParams);
         tv.setTextSize(20);
+        home.setBackgroundResource(R.drawable.home);
+        home.setWidth(10);
+        home.setHeight(10);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(intent);
+            }
+        });
         linearLayout = new LinearLayout(this);
         linearLayout.addView(imageView);
         linearLayout.addView(tl);
         linearLayout.addView(tv);
+        linearLayout.addView(home);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setBackgroundResource(R.drawable.background);
         setContentView(linearLayout);
