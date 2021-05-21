@@ -156,8 +156,8 @@ public class Nivel1Activity extends Activity {
         tv.setLayoutParams(layoutParams);
         tv.setTextSize(20);
         home.setBackgroundResource(R.drawable.home);
-        home.setWidth(10);
-        home.setHeight(10);
+        home.setWidth(20);
+        home.setHeight(20);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

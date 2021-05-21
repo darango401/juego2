@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sudoku_App">
-        <activity android:name=".creditosActivity"></activity>
+        <activity android:name=".creditosActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"/>
         <activity
             android:name=".Nivel3Activity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />

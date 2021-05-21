@@ -10,12 +10,12 @@ import android.widget.Button;
 import android.widget.PopupMenu;
 
 public class MenuActivity extends Activity {
-    Button buttonJugar, buttonSalir;
+    Button buttonJugar, buttonSalir, Credits;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+        Credits = (Button)findViewById(R.id.Credits);
         buttonJugar = (Button)findViewById(R.id.buttonJugar);
         buttonSalir = (Button)findViewById(R.id.buttonSalir);
         buttonSalir.setOnClickListener(new View.OnClickListener(){
@@ -35,10 +35,15 @@ public class MenuActivity extends Activity {
             }
         });
 
+        Credits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), creditosActivity.class);
+                startActivity(i);
+            }
+        });
+
 
     }
-    public void creditos(View view){
-        Intent i = new Intent(getApplicationContext(), creditosActivity.class);
-        startActivity(i);
-    }
+
 }
